@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<meta charset="utf8"/>
+
+<h1>JavaScript Array.every()</h1>
+
+<p>every() 方法检查所有数组值是否通过测试。</p>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var allOver18 = numbers.every(myFunction);
+
+document.getElementById("demo").innerHTML = "所有大于 18 的是：" + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
+
+<!-- 
+请注意此函数接受 3 个参数：
+项目值
+项目索引
+数组本身
+
+
+
+ -->

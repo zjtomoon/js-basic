@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="utf8"/>
+<h1>JavaScript Array.some()</h1>
+
+<p>some() 方法检查某些数组值是否通过了测试。</p>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var someOver18 = numbers.some(myFunction);
+
+document.getElementById("demo").innerHTML = "某些值大于 18 是：" + someOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
